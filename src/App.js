@@ -1,23 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
 
+import './App.css';
+import MenuChoice from './components/Menu'
+import Main from './components/Main'
 function App() {
+
+  const [background, setBackground] = useState('forest')
+  const [cursor, setCursor] = useState('squirrel')
+
+  const onClickOcean = () =>{
+    setBackground('ocean')
+}
+const onClickForest = () =>{
+    setBackground('forest')
+}
+const onClickSky = () =>{
+  setBackground('sky')
+}
+const onClickHH = () =>{
+  setBackground('hauntedHouse')
+}
+const onClickFish = () =>{
+  setCursor('fish')
+}
+const onClickCat = () =>{
+  setCursor('cat')
+}
+const onClickBird = () =>{
+  setCursor('bird')
+}
+const onClickSquirrel = () =>{
+  setCursor('squirrel')
+}
+const onClickGhost = () =>{
+  setCursor('Ghost')
+}
+// console.log(background)
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <MenuChoice background={background} onClickForest={onClickForest} onClickOcean={onClickOcean}
+    onClickCat={onClickCat} onClickFish={onClickFish} onClickBird={onClickBird}
+    onClickSky={onClickSky} onClickSquirrel={onClickSquirrel} onClickGhost={onClickGhost} 
+    onClickHH={onClickHH} />
+    <Main background={background} cursor={cursor} />
     </div>
   );
 }
