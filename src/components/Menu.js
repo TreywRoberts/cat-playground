@@ -28,7 +28,7 @@ onClickSky, onClickSquirrel, onClickGhost}){
                 <button onClick={onClickFish}>Fish</button>
                 <button onClick={onClickCat}>Cat</button>
                 <button onClick={onClickBird}>Bird</button>
-                <button onClick={onClickSquirrel}>Squirrle</button>
+                <button onClick={onClickSquirrel}>Squirrel</button>
                 <button onClick={onClickGhost}>Ghost</button>
 
             </div>

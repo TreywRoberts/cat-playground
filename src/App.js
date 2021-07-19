@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 
-import './App.css';
 import MenuChoice from './components/Menu'
 import Main from './components/Main'
 function App() {

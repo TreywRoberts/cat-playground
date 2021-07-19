@@ -5,22 +5,21 @@ background-color: black;
 
 display: flex;
 justify-content: space-evenly;
-    .dropbtn {
-        width: 150px;
-        background-color: black;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
+.dropbtn {
+    width: 150px;
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    transition: all 1s ease;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -30,19 +29,18 @@ justify-content: space-evenly;
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content button {
     width: 100%;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content button:hover {
+    background-color: #ddd;
+}
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
